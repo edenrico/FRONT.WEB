@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTATO</title>
+    <link rel="stylesheet" type="text/css" href="pagina4.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <div id="gs">
+                <div>
+                <strong>Global Solution<br>2023.2</strong>
+                </div>
+            </div>
+            <img src="./images/image 3.png" alt="fiap-logo">
+        </div>
+    </nav>
+
+    <main>
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Contact us</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email id" required>
+            <input type="text" id="phone" placeholder="Phone number" required>
+            <textarea id="message" rows="4" placeholder="Como podemos te ajudar?"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "aecesani@gmail.com",
+        Password: "lunna2809",
+        To: 'aecesani@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "New Contact Form Enquiry",
+        Body: "Name: " + document.getElementById("name").value +
+            "<br> Email: " + document.getElementById("email").value +
+            "<br> Phone number: " + document.getElementById("phone").value +
+            "<br> Message: " + document.getElementById("message").value
+    }).then(
+        message => alert("Message Sent Successfully")
+    );
+}
+
+        
+    </script>
+
+</main>
+
+<footer>
+
+    <ul>
+        <li><a href="pagina1.html">Explore a Revolução</a></li>
+        <li><a href="pagina2.html">Entenda o Desafio</a></li>
+        <li><a href="pagina3.html">Veja em ação</a></li>
+        <li><a href="pagina4.html">Converse Conosco</a></li>   
+    </ul>
+
+</footer>
+</body>
+</html>

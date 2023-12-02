@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Roboto:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.nav-logo #gs {
+    color: rgba(255, 1, 87, 1);
+    font-size: 40px;
+    padding: 40px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo img {
+    width: 200px;
+    padding-bottom: 150px;
+}
+
+.page-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 38px;
+    list-style: none;
+    gap: 2rem;
+    font-size: 20px;
+    
+    
+    
+}
+
+.text-growth h1,h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+.footer {
+    color: white;
+    padding-top: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+    
+
+}
+
+.footer button {
+    background-color: rgba(255, 1, 87, 1);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px 10px;
+    border-style: none;
+    
+    
+}
+
+
+
+    
+
+
+
+
+
+
+#video-mid .video-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
